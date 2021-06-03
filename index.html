@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App</title>
+    <link rel="stylesheet" href="./scss/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          enable-background="new 0 0 24 24"
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+          fill="#fff"
+          class="header__logo"
+        >
+          <rect fill="none" height="24" width="24" />
+          <path
+            d="M22,12c0-5.52-4.48-10-10-10S2,6.48,2,12c0,4.84,3.44,8.87,8,9.8V15H8v-3h2V9.5C10,7.57,11.57,6,13.5,6H16v3h-2 c-0.55,0-1,0.45-1,1v2h3v3h-3v6.95C18.05,21.45,22,17.19,22,12z"
+          />
+        </svg>
+      </a>
+      <nav class="header__nav">
+        <a class="header__link" href="./login.html">Login</a>
+        <a class="header__link" href="./registration.html">Register</a>
+      </nav>
+    </header>
+
+    <div class="slider-row"> 
+      <div class="slider">
+        <div class="slider__wrapper">
+          <button class="button" id="prev"> &#9001; </button>
+          <div class="slide">
+            <img src="https://flowers-shop.com.ua/include/uploads/images/roses/31-03-2017/Pionyi.jpeg" alt="" class="slide__pic">
+            <p class="slide__title">Number 1</p>
+            <p class="slide__text">First slider</p>
+          </div>
+          <div class="slide">
+            <img src="https://flowers-shop.com.ua/include/uploads/images/roses/31-03-2017/51_h_800x500.jpeg" alt="" class="slide__pic">
+            <p class="slide__title">Number 2</p>
+            <p class="slide__text">Second slider</p>
+          </div>
+          <div class="slide">
+            <img src="https://flowers-shop.com.ua/include/uploads/images/roses/31-03-2017/Stadii_pionov.jpeg" alt="" class="slide__pic">
+            <p class="slide__title">Number 3</p>
+            <p class="slide__text">Third slider</p>
+          </div>
+          <button class="button" id="next"> &#9002; </button>
+        </div>
+        <div class="slide__dots">
+          <div class="slide__dot"></div>
+          <div class="slide__dot"></div>
+          <div class="slide__dot"></div>
+        </div>
+        <div class="loop-buttons">
+          <button class="button" id="loop">Loop</button>
+          <button class="button" id="pause">Pause</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="./js/test.js"></script>
+  </body>
+</html>

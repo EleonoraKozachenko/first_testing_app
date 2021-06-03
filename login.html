@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./scss/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          enable-background="new 0 0 24 24"
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+          fill="#fff"
+          class="header__logo"
+        >
+          <rect fill="none" height="24" width="24" />
+          <path
+            d="M22,12c0-5.52-4.48-10-10-10S2,6.48,2,12c0,4.84,3.44,8.87,8,9.8V15H8v-3h2V9.5C10,7.57,11.57,6,13.5,6H16v3h-2 c-0.55,0-1,0.45-1,1v2h3v3h-3v6.95C18.05,21.45,22,17.19,22,12z"
+          />
+        </svg>
+      </a>
+      <nav class="header__nav">
+        <a class="header__link" href="./login.html">Login</a>
+        <a class="header__link" href="./registration.html">Register</a>
+      </nav>
+    </header>
+    <section class="main">
+      <div class="login-form">
+        <p class="login-form__title">Sign in</p>
+        <div class="login-form__row">
+          <p class="login-form__label">Enter login</p>
+          <input class="login-form__field" 
+          type="text" placeholder="Login" 
+          onchange="auth(this.value, 'login');"/>
+        </div>
+
+        <div class="login-form__row">
+          <p class="login-form__label">Enter password</p>
+          <input
+            class="login-form__field"
+            type="password"
+            placeholder="Password"
+            onchange="auth(this.value, 'password');"
+          />
+        </div>
+        <button class="login-form__button button blue" 
+        type="button" 
+        onclick="button()">
+          Sign in
+        </button>
+      </div>
+    </section>
+    <script src="./js/common.js"></script>
+    <script src="./js/login.js"></script>
+  </body>
+</html>

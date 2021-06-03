@@ -1,0 +1,26 @@
+.aside {
+  border-right: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+
+  &__link {
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000;
+    text-transform: uppercase;
+    transition: 0.3s;
+    margin-bottom: 5px;
+    border: 2px solid transparent;
+
+    &:hover {
+      background-color: blue;
+      color: #fff;
+    }
+
+    &.active {
+      border: 2px solid blue;
+    }
+  }
+}
