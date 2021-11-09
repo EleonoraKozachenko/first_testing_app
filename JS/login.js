@@ -6,7 +6,7 @@ const user = {
 const isLocalUser = localStorage.user;
 if (!isLocalUser && !window.location.pathname.includes("login")) {
   redirect("/login");
-};
+}
 
 function auth(value, type) {
   if (type === "login") {
@@ -14,12 +14,11 @@ function auth(value, type) {
   } else {
     user.password = value;
   }
-};
-
+}
 
 function validate() {
   const errors = {};
-  
+
   if (user.login.length === 0) {
     errors.loginError = "This login field is required";
   }
@@ -36,31 +35,31 @@ function validate() {
   }
 
   return errors;
-};
+}
 
 function getUser() {
   try {
     const users = fetch("https://jsonplaceholder.typicode.com/users").then(
-      (data => { // запрос на сервер с помощью fetch, then показывает ответ с сервера
-        console.log('data,', data)
-        }
-      )
+      (data) => {
+        // запрос на сервер с помощью fetch, then показывает ответ с сервера
+        console.log("data,", data);
+      }
     );
   } catch (error) {
     console.log("error", error);
   }
-};
+}
 
 function authUser(userClient, userStorage) {
   const isLogin = userClient.login === userStorage.login;
   const isPassword = userClient.password === userStorage.password;
-  if(isLogin && isPassword) {
-    redirect("/home"); 
+  if (isLogin && isPassword) {
+    redirect("/home");
   } else {
     alert("This user isn't defined");
     window.location.reload();
   }
-};
+}
 
 const dataUser = localStorage.user;
 
@@ -74,9 +73,9 @@ function button() {
     // localStorage.user = JSON.stringify({login : "admin" , password : "admin"});
     authUser(user, JSON.parse(dataUser));
   }
-};
+}
 
 function logout() {
   delete localStorage.user;
   redirect("/login");
-};
+}

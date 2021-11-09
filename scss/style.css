@@ -368,8 +368,8 @@ body {
   height: calc(100vh - 67px);
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 250px 1fr;
-      grid-template-columns: 250px 1fr;
+  -ms-grid-columns: 200px 1fr;
+      grid-template-columns: 200px 1fr;
 }
 
 .container__head {
@@ -396,6 +396,7 @@ body {
 .container .table__head p {
   font-size: 14px;
   color: #a2a2a2;
+  line-height: 26px;
 }
 
 .container .table__column {
@@ -418,6 +419,7 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  line-height: 26px;
 }
 
 .container .table .user__avatar {
@@ -445,7 +447,7 @@ body {
   padding: 0 10px;
   height: 40px;
   border-radius: 5px;
-  background: cornflowerblue;
+  background: blue;
   color: #fff;
   font-size: 14px;
 }
