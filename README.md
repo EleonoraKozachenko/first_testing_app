@@ -1,8 +1,8 @@
 ## General info
 
-This project is a layout of a classic app. I've dealed with registration form, searcher form and modal.
+This project is a layout of a classic app. I've made registration form, search form and modal.
 
-Also, a little photogallary was made as a part of educational process.
+Also, a little photo gallery was made as a part of educational process.
 
 ## Technologies
 
